@@ -22,9 +22,9 @@ const HelloWorldDisplay: React.FC<HelloWorldDisplayProps> = ({
   }
 
   const variantClasses = {
-    default: 'text-gray-900',
-    gradient: 'bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent',
-    outline: 'text-transparent stroke-gray-900 stroke-2'
+    default: 'text-pink-600',
+    gradient: 'bg-gradient-to-r from-pink-500 via-pink-400 to-pink-600 bg-clip-text text-transparent',
+    outline: 'text-transparent stroke-pink-600 stroke-2'
   }
 
   const textClasses = cn(
@@ -51,7 +51,7 @@ const HelloWorldDisplay: React.FC<HelloWorldDisplayProps> = ({
             animate={{ opacity: 1 }}
             transition={{ delay: index * 0.1, duration: 0.3 }}
           >
-            {char === ' ' ? '\u00A0' : char}
+            {char === ' ' ? '' : char}
           </motion.span>
         ))}
       </motion.h1>

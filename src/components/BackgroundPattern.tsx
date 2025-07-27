@@ -4,11 +4,11 @@ import { motion } from 'framer-motion'
 const BackgroundPattern: React.FC = () => {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50" />
+      <div className="absolute inset-0 bg-gradient-to-br from-pink-100 via-pink-50 to-pink-200" />
       
       {/* Floating circles */}
       <motion.div
-        className="absolute top-1/4 left-1/4 w-32 h-32 bg-blue-200 rounded-full opacity-20"
+        className="absolute top-1/4 left-1/4 w-32 h-32 bg-pink-300 rounded-full opacity-20"
         animate={{
           y: [-20, 20, -20],
           x: [-10, 10, -10]
@@ -21,7 +21,7 @@ const BackgroundPattern: React.FC = () => {
       />
       
       <motion.div
-        className="absolute top-3/4 right-1/4 w-24 h-24 bg-purple-200 rounded-full opacity-20"
+        className="absolute top-3/4 right-1/4 w-24 h-24 bg-pink-400 rounded-full opacity-20"
         animate={{
           y: [20, -20, 20],
           x: [10, -10, 10]

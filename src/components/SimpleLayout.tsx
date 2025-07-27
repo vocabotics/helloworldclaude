@@ -16,7 +16,7 @@ const SimpleLayout: React.FC<SimpleLayoutProps> = ({
     <div className={cn(
       'min-h-screen w-full',
       centered && 'flex items-center justify-center',
-      'bg-gradient-to-br from-gray-50 to-gray-100',
+      'bg-gradient-to-br from-pink-50 to-pink-100',
       className
     )}>
       <div className="container mx-auto px-4">
